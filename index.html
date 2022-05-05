@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<div class="calculator">
+  <div id="header">電卓</div>
+  <div id="calc">
+    <div>
+      <input readonly id="result" type="text" value="0">
+
+
+      <button onclick="getElementById('dot').disabled = false ; c_click()">AC</button>
+    </div>
+
+    <div class="btnset">
+      <div>
+        <button onclick="num_click(this.innerHTML)">7</button>
+        <button onclick="num_click(this.innerHTML)">8</button>
+        <button onclick="num_click(this.innerHTML)">9</button>
+        <button onclick="getElementById('dot').disabled = false;ope_click(this.innerHTML)">÷</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">4</button>
+        <button onclick="num_click(this.innerHTML)">5</button>
+        <button onclick="num_click(this.innerHTML)">6</button>
+        <button onclick="getElementById('dot').disabled = false;ope_click(this.innerHTML)">×</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">1</button>
+        <button onclick="num_click(this.innerHTML)">2</button>
+        <button onclick="num_click(this.innerHTML)">3</button>
+        <button onclick="getElementById('dot').disabled = false;ope_click(this.innerHTML)">-</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">0</button>
+        <button id="dot" onclick="
+        disabled = true ;
+         num_click(this.innerHTML)">.</button>
+        <button onclick="
+        // getElementById('dot').disabled = false 
+        ;equal_click()">=</button>
+        <button onclick="getElementById('dot').disabled = false ;ope_click(this.innerHTML)">+</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<script type="text/javascript" src="main.js" charset="utf-8"></script>
+
+</body>
+</html>

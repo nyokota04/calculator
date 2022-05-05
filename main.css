@@ -1,0 +1,29 @@
+.calculator{
+  text-align: center;
+}
+
+#header{
+  font-size: 20px;
+}
+
+#result{
+  margin: 5px 1px 10px 1px;
+}
+
+/* .button{
+  background: aqua;
+} */
+
+.btnset button{
+  font-size:20px;
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+  background-color: white;
+  border-color: aliceblue;
+  color: black;
+
+}
+
+
+
